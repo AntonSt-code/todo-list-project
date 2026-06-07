@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ToDo List</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app">
+    <section class="todo-card">
+      <h1>ToDo List</h1>
+      <p class="subtitle">Список завдань із збереженням у localStorage</p>
+
+      <form id="todo-form" class="todo-form">
+        <input
+          id="todo-input"
+          type="text"
+          placeholder="Введіть нове завдання..."
+          autocomplete="off"
+        />
+        <button type="submit">Додати</button>
+      </form>
+
+      <ul id="todo-list" class="todo-list"></ul>
+
+      <p id="empty-message" class="empty-message">
+        Завдань поки немає. Додайте перше завдання.
+      </p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
